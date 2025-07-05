@@ -17,6 +17,10 @@ void main() {
     expect(list[5], 'multilineList');
     expect(list[6], 'multilineText2');
     expect(list[7], 'img');
+    expect(list[8], 'link');
+    expect(list[9], 'header');
+    expect(list[10], 'logo');
+    expect(list[11], 'footer');
   });
 
   // test('generate pdf', () async {
