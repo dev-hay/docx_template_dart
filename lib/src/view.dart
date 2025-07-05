@@ -108,18 +108,18 @@ class TextView extends View<TextContent?> {
     XmlElement? next = sib.nextSibling as XmlElement?;
     while (next != null) {
       final laterNext = next.nextSibling;
-      if (next.name.local == 'r') {
-        parent!.children.remove(next);
-      }
+        if (next.name.local == 'r') {
+          parent!.children.remove(next);
+        }
       next = laterNext as XmlElement?;
     }
 
     XmlElement? prev = sib.previousSibling as XmlElement?;
     while (prev != null) {
       final laterPrev = prev.previousSibling;
-      if (prev.name.local == 'r') {
-        parent!.children.remove(prev);
-      }
+        if (prev.name.local == 'r') {
+          parent!.children.remove(prev);
+        }
       prev = laterPrev as XmlElement?;
     }
   }
